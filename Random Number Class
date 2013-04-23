@@ -1,0 +1,23 @@
+public class RandomNumber1
+{ 
+  private int LoBound;
+  private int HiBound;
+  
+  public RandomNumber1()
+  	{
+  		LoBound = 1;
+  		HiBound = 10;
+  	}
+  public RandomNumber1(int High, int Low)
+  	{
+  		LoBound = Low;
+  		HiBound = High;
+  	}
+  public int GetRandomNumber()
+  	{
+  		int Random;
+  		return Random = LoBound + (int) (Math.random() * HiBound );
+  		
+  	}
+}
+

@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Tester 
+{
+  public static void main(String[] args)
+  {
+  	Scanner input = new Scanner( System.in); 
+  	RandomNumber1 RandomNumber = new RandomNumber1();
+  	RandomNumber1 RandomNumber1 = new RandomNumber1(2, 6);
+  	RandomNumber1 RandomNumber2 = new RandomNumber1(7, 12);
+  	int one,
+  		two,
+  		three;
+  	
+  	
+  	one = RandomNumber.GetRandomNumber();
+  	System.out.printf( "Your number is %d \n", one);
+  	
+  	two = RandomNumber1.GetRandomNumber();
+  	System.out.printf( "Your number is %d \n", two);
+  	
+  	three = RandomNumber2.GetRandomNumber();
+  	System.out.printf( "Your number is %d \n", three);
+  	
+  	
+  }
+
+}

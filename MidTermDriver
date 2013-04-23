@@ -1,0 +1,28 @@
+
+import java.util.Scanner;
+public class MidTerm2 
+{
+
+  public static void main(String[] args)
+  {
+  	new Scanner( System.in);
+  	
+  	new MidTermClass(1, 6);	
+  	MidTermClass.UserGuess();
+  	MidTermClass.CheckWinner();
+  	
+  	new MidTermClass(1, 6);
+  	new MidTermClass(7, 12);
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  }
+
+}

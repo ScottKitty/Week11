@@ -1,0 +1,71 @@
+
+import java.util.Scanner;
+public class MidTermClass
+
+{
+  public static int Random;
+  public static int number;
+  private int LoBound;
+  private int HiBound;
+  
+  public MidTermClass()
+  	{
+  		LoBound = 1;
+  		HiBound = 6;
+  	}
+  public MidTermClass(int High, int Low)
+  	{
+  		LoBound = Low;
+  		HiBound = High;
+  	}
+  public int GetRandomNumber()
+  	{
+  		return LoBound + (int) (Math.random() * HiBound );
+  		
+  	}
+  static void UserGuess()
+  	{
+  		Scanner input = new Scanner(System.in);
+  		System.out.println("Please Guess if the dice will roll a low of 1-3 or high of 4-6");
+  		number = input.nextInt();
+  	}
+  static void CheckWinner()
+  	{
+  		
+  		
+  		if ( (Random < 4) && (number < 4) )
+  			{
+  				System.out.println("You Win, Both Low");
+  				System.out.printf("Dice was %d", Random);
+  				
+  			}
+  		else if ( (Random < 3) && (number < 3) )
+  			{
+  				System.out.println("You Win, Both high");
+  				System.out.printf("Dice was %d", Random);
+  				
+  			}
+  		else 
+  			{
+  				System.out.println("You Lose");
+  				System.out.printf("Dice was %d", Random);
+  			}
+  		
+
+  	}
+}
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

@@ -1,0 +1,43 @@
+import java.util.Scanner;
+public class DiceTest
+{
+  @SuppressWarnings("null")
+  public static void main(String[] args)
+  {
+  	
+  	April29 RollDice = new April29();
+  	
+  	Scanner input = new Scanner(System.in);
+  	
+  	int four;
+  	int five;
+  	int six;
+  	int seven;
+  	String askQuestion = null;
+  	
+  	
+  	do
+  	{
+  
+  	System.out.printf( "Enter how many dice \n");
+  	four = input.nextInt();
+  	System.out.printf( "Enter max value \n");
+  	five = input.nextInt();
+  	
+  	six = April29.Dice(four, five);
+  	System.out.printf(" Total is %d \n", six);
+  
+  	System.out.printf ( "Play again ? Y or N. \n\n" );
+  	askQuestion = input.next();
+  	
+  	
+  	} 
+  	while (askQuestion.equalsIgnoreCase("y"));
+  
+  	seven = RollDice.RollCount();
+  	System.out.printf("Total number of rolls %d \n", seven);
+
+  	
+  
+  }
+}

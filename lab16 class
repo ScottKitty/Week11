@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class April29 
+{
+  
+  public int RollDice(int dice)
+  {
+  	int number;
+  	number = dice * 6;
+  	return 1 + (int) (Math.random() * number);
+  }
+  
+  static int Roll_1_Dice()
+  {
+
+  	return (1 + (int) (Math.random() * 6));
+  	
+  }
+}

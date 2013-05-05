@@ -1,0 +1,40 @@
+
+import java.util.Scanner;
+public class April29 
+{
+  private static int numberofrolls = 0;
+  private static int numberofrollm = 0;
+  
+  
+  public int RollDice(int dice)
+  {
+    int number;
+  	numberofrollm += dice;
+  	number = dice * 6;
+  	return 1 + (int) (Math.random() * number);
+  }
+  static int Roll_1_Dice()
+  {
+	numberofrolls++;
+  	return (1 + (int) (Math.random() * 6));
+  	
+  }
+  static int Dice(int dice, int max)
+  {
+  	numberofrolls += dice;
+  	
+  	int number;
+  	
+  	number = dice * max;
+  	return 1 + (int) (Math.random() * number);
+  
+  }
+  public int RollCountS()
+  {
+  	return numberofrolls;
+  }
+  public int RollCountM()
+  {
+	  return numberofrollm;
+  }
+}
